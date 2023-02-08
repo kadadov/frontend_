@@ -4,8 +4,9 @@
   "description": "FrontEnd project",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve"
+    "start": "webpack serve --env port=3000 mode=development",
+    "build:prod": "webpack --env mode=production",
+    "build:dev": "webpack --env mode=development"
   },
   "keywords": [
     "frontend"
