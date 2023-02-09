@@ -1,6 +1,6 @@
-import { LOCAL_STORAGE_THEME_KEY } from "../config/contants";
-import { Theme } from "../ui/ThemeContext";
+import { LOCAL_STORAGE_THEME_KEY } from "../config/contants"
+import { type Theme } from "../ui/ThemeContext"
 
-export const loadTheme = (): Theme | null => {
-  return localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme;
-};
+export const loadTheme = (): string => {
+  return localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme
+}

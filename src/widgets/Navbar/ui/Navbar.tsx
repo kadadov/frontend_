@@ -1,9 +1,9 @@
-import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { RoutePath } from "shared/config/routeConfig";
+import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom"
+import { RoutePath } from "shared/config/routeConfig"
 
 export const Navbar = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <div>
@@ -16,5 +16,5 @@ export const Navbar = () => {
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}

@@ -1,7 +1,7 @@
-import { type RouteObject } from "react-router-dom";
-import { Layout } from "app/layout";
-import { AboutPage, MainPage, NotFoundPage } from "pages";
-import { RoutePath } from "shared/config/routeConfig";
+import { type RouteObject } from "react-router-dom"
+import { Layout } from "app/layout"
+import { AboutPage, MainPage, NotFoundPage } from "pages"
+import { RoutePath } from "shared/config/routeConfig"
 
 export const routes: RouteObject[] = [
   {
@@ -11,12 +11,12 @@ export const routes: RouteObject[] = [
     children: [
       {
         path: RoutePath.main,
-        element: <MainPage />,
+        element: <MainPage />
       },
       {
         path: RoutePath.about,
-        element: <AboutPage />,
-      },
-    ],
-  },
-];
+        element: <AboutPage />
+      }
+    ]
+  }
+]
