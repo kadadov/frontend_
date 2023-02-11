@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
-import cls from "./SwitcherLanguage.module.css"
 import IconRussia from "shared/assets/icons/flag-russia.svg"
 import IconUSA from "shared/assets/icons/flag-usa.svg"
+import cls from "./SwitcherLanguage.module.scss"
 
 export const SwitcherLanguage = () => {
   const { i18n } = useTranslation()

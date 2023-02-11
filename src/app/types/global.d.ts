@@ -4,6 +4,11 @@ declare module "*.css" {
   export = classnames
 }
 
+declare module '*.module.scss' {
+  const content: Record<string, string>;
+  export default content;
+}
+
 declare module "*.png";
 
 declare module "*.jpg";
@@ -16,4 +21,4 @@ declare module "*.svg" {
   export default src
 }
 
-declare const __IS_DEV__: адлдл
+declare const __IS_DEV__: boolean
