@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true
+        // "build": true,
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
