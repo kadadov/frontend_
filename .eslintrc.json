@@ -5,7 +5,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard-with-typescript"
+        "standard-with-typescript",
+        "plugin:i18next/recommended"
     ],
     "overrides": [
     ],
@@ -18,15 +19,18 @@
         }
     },
     "plugins": [
-        "react"
+        "react",
+        "i18next"
     ],
     "ignorePatterns": [
-        "src/app/types/global.d.ts"
+        "src/app/types/global.d.ts",
+        "src/shared/config/**/*",
+        "src/pages/**/*.async.tsx"
     ],
     "rules": {
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
-        "@typescript-eslint/quotes": ["error", "double"],
+        "@typescript-eslint/quotes": ["warn", "double"],
         "multiline-ternary": ["error", "always-multiline"],
 
         "react/jsx-indent": ["error", 2],
@@ -35,6 +39,7 @@
 
         "@typescript-eslint/prefer-nullish-coalescing": "off",
         "@typescript-eslint/strict-boolean-expressions": "off"
+        
         // "@typescript-eslint/comma-dangle": ["error", {
         //     "arrays": "never",
         //     "objects": "never",
