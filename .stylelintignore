@@ -1,0 +1,5 @@
+*.ts
+*.tsx
+*.md
+*.svg
+/node_modules

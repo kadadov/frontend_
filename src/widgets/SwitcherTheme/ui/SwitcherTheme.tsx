@@ -1,14 +1,16 @@
-import { useTheme } from "app/providers/ThemeProvider"
-import { type ReactElement } from "react"
-import { Icon } from "./Icon"
-import cls from "./SwitcherTheme.module.scss"
+import { type FC } from "react";
 
-export const SwitcherTheme = (): ReactElement => {
-    const { theme, toggleTheme } = useTheme()
+import { useTheme } from "../hooks/useTheme";
+
+import { Icon } from "./Icon";
+import cls from "./SwitcherTheme.module.scss";
+
+export const SwitcherTheme: FC = () => {
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <button onClick={toggleTheme}>
             <Icon theme={theme} className={cls.icon} />
         </button>
-    )
-}
+    );
+};

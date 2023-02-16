@@ -1,10 +1,11 @@
-import { type ReactElement } from "react"
-import { useTranslation } from "react-i18next"
-import { Link } from "react-router-dom"
-import { RoutePath } from "shared/config/routeConfig"
+import { type FC } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-export const Navbar = (): ReactElement => {
-    const { t } = useTranslation()
+import { RoutePath } from "shared/config/routeConfig";
+
+export const Navbar: FC = () => {
+    const { t } = useTranslation();
 
     return (
         <div>
@@ -17,5 +18,5 @@ export const Navbar = (): ReactElement => {
                 </li>
             </ul>
         </div>
-    )
-}
+    );
+};

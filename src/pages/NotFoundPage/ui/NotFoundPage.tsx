@@ -1,10 +1,10 @@
-import { type ReactElement } from "react"
-import { useTranslation } from "react-i18next"
+import { type FC } from "react";
+import { useTranslation } from "react-i18next";
 
-const NotFoundPage = (): ReactElement => {
-    const { t } = useTranslation("NotFountPage")
+const NotFoundPage: FC = () => {
+    const { t } = useTranslation("NotFountPage");
 
-    return <div>{t("404 страница не найдена")}</div>
-}
+    return <div>{t("404 страница не найдена")}</div>;
+};
 
-export default NotFoundPage
+export default NotFoundPage;

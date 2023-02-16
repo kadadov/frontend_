@@ -2,13 +2,15 @@ body {
     margin: 0;
 }
 
-.test-test {
+pre {
     margin-top: 10px;
     margin-bottom: 24px;
     padding: 12px;
-
     font-size: 1em;
-
-    background: #000;
+    background: #f7f7f7;
     border-radius: 2px;
+}
+
+div {
+    margin: 10px;
 }

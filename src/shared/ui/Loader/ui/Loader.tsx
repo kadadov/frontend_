@@ -1,10 +1,11 @@
-import { type ReactElement } from "react"
-import cls from "./Loader.module.scss"
+import { type FC } from "react";
 
-export const Loader = (): ReactElement => {
+import cls from "./Loader.module.scss";
+
+export const Loader: FC = () => {
     return (
         <div className={cls.wrapper}>
             <div className={cls.loader}></div>
         </div>
-    )
-}
+    );
+};

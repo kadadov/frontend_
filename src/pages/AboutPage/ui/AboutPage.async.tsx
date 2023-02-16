@@ -1,6 +1,7 @@
-import { lazy } from "react"
-import { dealy } from "shared/lib/dealy"
+import { lazy } from "react";
 
-export const AboutPageAsync = lazy(async () =>
-    dealy().then(() => import("./AboutPage")),
-)
+import { dealy } from "shared/lib/dealy";
+
+export const AboutPageAsync = lazy(
+    async () => await dealy().then(async () => await import("./AboutPage"))
+);

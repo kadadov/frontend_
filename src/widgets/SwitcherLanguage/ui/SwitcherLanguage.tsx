@@ -1,21 +1,23 @@
-import { type TFunction } from "i18next"
-import { type ReactElement } from "react"
-import { useTranslation } from "react-i18next"
-import IconRussia from "shared/assets/icons/flag-russia.svg"
-import IconUSA from "shared/assets/icons/flag-usa.svg"
-import cls from "./SwitcherLanguage.module.scss"
+import { type TFunction } from "i18next";
+import { type FC } from "react";
+import { useTranslation } from "react-i18next";
 
-export const SwitcherLanguage = (): ReactElement => {
-    const { i18n } = useTranslation()
+import IconRussia from "shared/assets/icons/flag-russia.svg";
+import IconUSA from "shared/assets/icons/flag-usa.svg";
+
+import cls from "./SwitcherLanguage.module.scss";
+
+export const SwitcherLanguage: FC = () => {
+    const { i18n } = useTranslation();
 
     const toggleLanguage = async (): Promise<TFunction> =>
-        await i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru")
+        await i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
 
     const onClick = (): void => {
         toggleLanguage().catch(() => {
-            console.log("ERROR! i18n")
-        })
-    }
+            console.log("ERROR! i18n");
+        });
+    };
 
     return (
         <button onClick={onClick}>
@@ -25,5 +27,5 @@ export const SwitcherLanguage = (): ReactElement => {
                 <IconUSA className={cls.icon} />
             )}
         </button>
-    )
-}
+    );
+};
