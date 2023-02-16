@@ -1,13 +1,7 @@
 import { type FC } from "react";
 
-import { ThemeProvider } from "app/providers/ThemeProvider";
-
-import { AppRouter } from "./providers/RouterProvider";
+import { AppProvider } from "app/providers";
 
 export const App: FC = () => {
-    return (
-        <ThemeProvider>
-            <AppRouter />
-        </ThemeProvider>
-    );
+    return <AppProvider />;
 };

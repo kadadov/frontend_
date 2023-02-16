@@ -51,7 +51,9 @@
             "jsx": true
         }
     },
-    "plugins": ["react", "i18next", "prettier"],
+    "plugins": ["react", "i18next",
+    // "unused-imports",
+     "prettier"],
     "rules": {
         "prettier/prettier": "error",
 
@@ -63,6 +65,9 @@
         "@typescript-eslint/strict-boolean-expressions": "off",
         // "@typescript-eslint/quotes": ["warn", "double"],
         // "@typescript-eslint/indent": ["warn", 4],
+
+        // unused-imports
+        // "unused-imports/no-unused-imports": "error",
 
         // FSD
         "import/order": [
