@@ -9,6 +9,7 @@ export default (env: BuildEnv): Configuration => {
     const mode = env.mode || "development";
     const port = env.port || 3000;
     const isDev = mode === "development";
+    const isAnalyzer = env.analyzer;
 
     const paths = {
         entry: path.resolve(__dirname, "src", "index.tsx"),
@@ -21,7 +22,8 @@ export default (env: BuildEnv): Configuration => {
         mode,
         isDev,
         port,
-        paths
+        paths,
+        isAnalyzer
     };
 
     const config = buildWebpackConfig(options);
